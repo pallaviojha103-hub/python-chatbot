@@ -1,7 +1,6 @@
-'''import openai  
+import openai  
 
-openai.api_key="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"
-
+openai.api_key="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"
 def chat_with_gpt(prompt):
     response = openai.ChatCompletion.create(
         model="gpt-4o-mini",
@@ -12,12 +11,12 @@ def chat_with_gpt(prompt):
 
 if __name__=="__main__":
     while True: 
-        user_input=input("you: ")
-        if user_input.lower() in ["quit","exit","bye"]:
+        input_user=input("you: ")
+        if input_user.lower() in ["quit","exit","bye"]:
             break
 
-        response  = chat_with_gpt(user_input) 
-        print("chatbot: ", response)'''
+        response  = chat_with_gpt(input_user) 
+        print("chatbot: ", response)
 
 
 
